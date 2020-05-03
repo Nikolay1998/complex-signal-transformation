@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="822.0" prefWidth="1003.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Controller">
+    <children>
+        <LineChart fx:id="resultPhaseChart" layoutX="450.0" layoutY="399.0" prefHeight="401.0" prefWidth="429.0" title="Output Phase" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="450.0" AnchorPane.rightAnchor="121.0" AnchorPane.topAnchor="399.0">
+            <xAxis>
+                <NumberAxis label="u" side="BOTTOM" fx:id="xResultPhaseAxis" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="yResultPhaseAxis" label="phi(u)" side="LEFT" />
+            </yAxis>
+        </LineChart>
+        <LineChart fx:id="resultAmplChart" layoutX="-1.0" layoutY="398.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="429.0" title="Output Amplitude" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="570.0" AnchorPane.topAnchor="398.0">
+            <xAxis>
+                <NumberAxis label="u" side="BOTTOM" fx:id="xResultAmplAxis" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="yResultAmplAxis" label="A(u)" side="LEFT" />
+            </yAxis>
+        </LineChart>
+      <LineChart fx:id="funcAmplChart" layoutX="-1.0" layoutY="-2.0" prefHeight="400.0" prefWidth="429.0" title="Input Amplitude">
+          <xAxis>
+              <NumberAxis label="x" side="BOTTOM" fx:id="xFuncAmplAxis" />
+          </xAxis>
+          <yAxis>
+              <NumberAxis fx:id="yFuncAmplAxis" label="A(x)" side="LEFT" />
+          </yAxis>
+      </LineChart>
+      <LineChart fx:id="funcPhaseChart" layoutX="450.0" layoutY="-3.0" prefHeight="402.0" prefWidth="430.0" title="Input Phase">
+          <xAxis>
+              <NumberAxis label="x" side="BOTTOM" fx:id="xFuncPhaseAxis" />
+          </xAxis>
+          <yAxis>
+              <NumberAxis fx:id="yFuncPhaseAxis" label="phi(x)" side="LEFT" />
+          </yAxis>
+      </LineChart>
+    </children>
+</AnchorPane>
